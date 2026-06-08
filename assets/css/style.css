@@ -270,3 +270,8 @@ a:hover { color: var(--accent-dark); text-decoration: underline; }
   max-width: 100%;
   border-radius: 12px;
 }
+.visitor-map video,
+.visitor-map-globe iframe {
+  max-width: 100%;
+  border-radius: 12px;
+}
