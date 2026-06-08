@@ -260,18 +260,25 @@ a:hover { color: var(--accent-dark); text-decoration: underline; }
   line-height: 1.5;
 }
 
-.visitor-map {
+.visitor-map,
+.visitor-map-globe {
+  width: 100%;
   overflow: hidden;
   text-align: center;
+  margin-top: 10px;
 }
 
 .visitor-map img,
-.visitor-map iframe {
-  max-width: 100%;
+.visitor-map iframe,
+.visitor-map-globe img,
+.visitor-map-globe iframe,
+.visitor-map-globe canvas,
+.visitor-map-globe video {
+  max-width: 100% !important;
+  width: 100% !important;
   border-radius: 12px;
 }
-.visitor-map video,
-.visitor-map-globe iframe {
-  max-width: 100%;
-  border-radius: 12px;
+
+.visitor-map-globe {
+  min-height: 190px;
 }
